@@ -28,6 +28,10 @@ final class MessageComposer {
         }
     }
 
+    func clearCache() {
+        cachedAlbumArt = nil
+    }
+
     // MARK: - Build MSMessage
 
     /// Builds the MSMessage ready to insert into the conversation.
@@ -52,12 +56,12 @@ final class MessageComposer {
         layout.imageTitle = "IDShare"
         layout.imageSubtitle = "Tap to open on any platform"
 
-        let message = MSMessage(session: conversation.selectedMessage?.session ?? MSSession())
+        let message = MSMessage()
         message.layout = layout
         message.url = song.landingPageURL
 
-        // Fallback text for notifications and non-visual contexts
-        message.summaryText = song.landingPageURL.absoluteString
+        // Shown in notifications and conversation list previews
+        message.summaryText = "\(song.title) by \(song.artist) — IDShare"
 
         return message
     }
