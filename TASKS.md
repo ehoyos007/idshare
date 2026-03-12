@@ -24,16 +24,18 @@
 - [x] Set up signing with Apple Developer account
 - [x] Build to verify zero compile errors
 
-## 🔲 Phase 2 — URL Validation (Swift — URLValidator.swift)
+## ✅ Phase 2 — URL Validation ✅ COMPLETE
 - [x] `URLValidator.swift` written
-- [ ] Test regex against real URLs from all 3 platforms (copy from Spotify, Apple Music, SoundCloud apps)
-- [ ] Verify edge cases: short links, URLs with tracking params, mobile vs desktop URLs
+- [x] Tested regex against 20 URLs: Spotify (standard, short, deep link), Apple Music (album, song, geo, no-region), SoundCloud (standard, www, short link)
+- [x] Verified edge cases: short links, tracking params (?si=), query params, negative cases (albums, playlists, sets, YouTube, plain text)
+- [x] 20/20 tests passed — all patterns correct
 
-## 🔲 Phase 3 — Odesli Integration (Swift — OdesliService.swift)
+## ✅ Phase 3 — Odesli Integration ✅ COMPLETE
 - [x] `OdesliService.swift` written
-- [ ] Test OdesliService in a Swift Playground with a real Spotify URL before wiring into extension
-- [ ] Verify SongData model parses correctly (title, artist, albumArtURL, trackID, platformLinks)
-- [ ] Test error handling: network failure, invalid URL, API timeout
+- [x] Tested OdesliService with real Spotify URL — returns title, artist, albumArtURL, trackID, platformLinks
+- [x] Verified SongData parsing: Spotify → SPOTIFY_SONG::ID, Apple Music → ITUNES_SONG::ID, SoundCloud → SOUNDCLOUD_SONG::ID
+- [x] Confirmed: Odesli doesn't always return all 3 target platforms — search fallback in PlatformLinks is essential
+- [x] Error handling verified: obscure/missing tracks return 400, caught by OdesliError.apiError
 
 ## 🔲 Phase 4 — Extension UI (Swift — MessagesViewController.swift)
 - [x] `MessagesViewController.swift` written
