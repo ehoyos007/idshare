@@ -390,43 +390,19 @@ final class MessagesViewController: MSMessagesAppViewController {
         }
     }
 
-    // MARK: - Incoming Message Handling
-
-    /// When a user taps an existing IDShare bubble, open the landing page in Safari.
-    @discardableResult
-    private func handleSelectedMessage(from conversation: MSConversation) -> Bool {
-        guard let selectedMessage = conversation.selectedMessage,
-              let url = selectedMessage.url,
-              url.host == "idshare.vercel.app" else {
-            return false
-        }
-        extensionContext?.open(url) { [weak self] success in
-            if success { self?.dismiss() }
-        }
-        return true
-    }
-
     // MARK: - MSMessagesAppViewController Overrides
 
     override func willBecomeActive(with conversation: MSConversation) {
         super.willBecomeActive(with: conversation)
-        // If user tapped an existing IDShare bubble, open landing page in Safari
-        if handleSelectedMessage(from: conversation) { return }
-        // Fresh open from app drawer — reset to clean state
+        // Reset to clean state each time the extension opens
         currentSong = nil
         composer.clearCache()
         state = .compact
         urlTextField.text = ""
     }
 
-    override func didSelect(_ message: MSMessage, conversation: MSConversation) {
-        super.didSelect(message, conversation: conversation)
-        handleSelectedMessage(from: conversation)
-    }
-
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
         super.didTransition(to: presentationStyle)
-        // If user manually collapses back to compact, reset state
         if presentationStyle == .compact && currentSong == nil {
             state = .compact
         }
