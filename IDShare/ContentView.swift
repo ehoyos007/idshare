@@ -33,7 +33,7 @@ struct ContentView: View {
 
                     Text("Tap the  button in a conversation,\nthen find IDShare in the app drawer.")
                         .font(.caption)
-                        .foregroundColor(.tertiaryLabel)
+                        .foregroundColor(Color(UIColor.tertiaryLabel))
                         .multilineTextAlignment(.center)
                 }
             }

@@ -8,16 +8,21 @@
 - [x] GitHub repo created (ehoyos007/idshare)
 - [x] Project docs scaffolded (CONTEXT.md, TASKS.md, PLAN.md, PROGRESS.md)
 - [x] All Swift source files written (OdesliService, URLValidator, MessageComposer, ClipboardReader, MessagesViewController, SongData)
+- [x] Xcode project created via xcodegen (project.yml + IDShare.xcodeproj)
+- [x] IDShareApp.swift entry point + Assets.xcassets for both targets
+- [x] Info.plist for iMessage extension (NSExtensionPointIdentifier configured)
+- [x] WebKit.framework added to IDShareExtension
+- [x] Code signing configured (team PKXQTDC76Q, automatic provisioning)
+- [x] Both targets build with zero compile errors
+- [x] Fixed .tertiaryLabel color compatibility in ContentView.swift
 
-## 🔲 Phase 1 — Xcode Project Setup (Manual — requires Xcode)
-- [ ] Create new Xcode project: iOS App, SwiftUI, Swift. Product name: **IDShare**. Bundle ID: `com.enzohoyos.idshare`
-- [ ] Add iMessage Extension target: File → New → Target → iMessage Extension. Name: **IDShareExtension**. Bundle ID: `com.enzohoyos.idshare.extension`
-- [ ] Activate the IDShareExtension scheme when prompted
-- [ ] Verify no `NSAppTransportSecurity` key blocking HTTPS in Info.plist (should be fine by default)
-- [ ] Add `WebKit.framework` to IDShareExtension target → General → Frameworks
-- [ ] Copy Swift source files from `IDShareExtension/` into the Xcode target
-- [ ] Set up signing: Xcode → Signing & Capabilities → select your Apple Developer account
-- [ ] Build to verify zero compile errors before touching the device
+## ✅ Phase 1 — Xcode Project Setup ✅ COMPLETE
+- [x] Create Xcode project with both targets (IDShare app + IDShareExtension) via xcodegen
+- [x] Configure iMessage Extension with correct bundle ID (`com.enzohoyos.idshare.extension`)
+- [x] Add `WebKit.framework` to IDShareExtension target
+- [x] All Swift source files included in targets
+- [x] Set up signing with Apple Developer account
+- [x] Build to verify zero compile errors
 
 ## 🔲 Phase 2 — URL Validation (Swift — URLValidator.swift)
 - [x] `URLValidator.swift` written
