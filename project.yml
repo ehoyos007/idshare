@@ -19,6 +19,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.enzohoyos.idshare
+        PRODUCT_NAME: "IDShare - Music Links"
+        INFOPLIST_KEY_CFBundleDisplayName: "IDShare - Music Links"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
@@ -31,15 +33,19 @@ targets:
       - target: IDShareExtension
 
   IDShareExtension:
-    type: app-extension
+    type: app-extension.messages
     platform: iOS
     sources:
       - path: IDShareExtension
+        excludes:
+          - "MessageIcons"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.enzohoyos.idshare.extension
         INFOPLIST_FILE: IDShareExtension/Info.plist
         GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: "Messages Icon"
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
         CODE_SIGN_STYLE: Automatic

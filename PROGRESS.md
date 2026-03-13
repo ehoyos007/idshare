@@ -60,4 +60,45 @@ MSMessage with MSMessageTemplateLayout creates rich bubbles but **requires the e
 ### Where we left off
 - Phases 1-6 complete — IDShare is functional end-to-end
 - Remaining test matrix items: Apple Music links, SoundCloud links, edge cases
-- Phase 7 (Share Sheet) and Phase 8 (Audio Preview) are future work
+- Phase 7 (TestFlight) started — see Session 3
+
+---
+
+## Session: 2026-03-12 (Session 3 — TestFlight Distribution)
+
+**Summary:** Resolved MSMessage tap behavior bugs, then navigated the entire TestFlight submission process — icon generation, validation errors, App Store Connect setup, and Beta App Review submission. IDShare is now on TestFlight with both internal and external testing groups.
+
+### What was done
+
+**MSMessage Fixes**
+1. Removed `MSSession` from message creation (was causing interactive message behavior)
+2. Switched from `MSMessage` to `conversation.insertText()` for universal link compatibility
+3. Added `willBecomeActive` state reset for clean extension reopens
+
+**TestFlight Submission (many iterations)**
+4. Installed xcodegen `app-extension.messages` product type (required for iMessage icon compilation)
+5. Changed `PRODUCT_NAME` to "IDShare - Music Links" (original name taken on App Store)
+6. Generated 1024x1024 main app icon + 13 iMessage extension icons (non-square, 4:3 ratio)
+7. Discovered stickersiconset CLI compilation bug — only compiles larger sizes, drops small ones
+8. Used Xcode GUI to create Messages Icon set and drag correctly-sized PNGs into each slot
+9. Fixed `ASSETCATALOG_COMPILER_APPICON_NAME` mismatch ("iMessage App Icon" vs "Messages Icon")
+10. Fixed `MSMessagesExtensionStoreIconName` in Info.plist to match
+11. Archived via Xcode GUI (Product → Archive) — CLI archives had icon compilation issues
+12. Uploaded Build 1 (TestFlight Internal Only) + Build 2 (App Store Connect for external eligibility)
+13. Created Internal Testing group ("Friends") + External Testing group ("Public Beta")
+14. Submitted Build 2 for Beta App Review with test description
+15. Created comprehensive `TESTFLIGHT_GUIDE.md` documenting all lessons learned
+
+### Key lessons learned
+- iMessage extension icons are **non-square (4:3 ratio)** — completely different from regular app icons
+- `stickersiconset` asset catalogs must be created via **Xcode GUI**, not CLI — CLI compilation drops smaller sizes
+- `app-extension.messages` product type is required (not generic `app-extension`)
+- `ASSETCATALOG_COMPILER_APPICON_NAME` must exactly match the icon set folder name
+- TestFlight Internal Only builds cannot be added to External Testing groups — use App Store Connect distribution
+- `PRODUCT_NAME` must be globally unique across the entire App Store
+
+### Where we left off
+- Build 2 submitted for Beta App Review (24-48 hour approval)
+- Once approved: enable Public Link on External Testing group for easy sharing
+- Phases 1-7 complete
+- Future work: Share Sheet extension (Phase 8), Audio Preview (Phase 9)

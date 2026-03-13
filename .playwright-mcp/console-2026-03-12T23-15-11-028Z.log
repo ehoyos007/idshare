@@ -1,0 +1,15 @@
+[    1146ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://appstoreconnect.apple.com/olympus/v1/session:0
+[    2366ms] [ERROR] Access to font at 'https://appleid.cdn-apple.com/appleauth/static/bin/cb3432457731/dist/assets/shared-icons.woff' from origin 'https://idmsa.apple.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://idmsa.apple.com/appleauth/auth/signin?widgetKey=e0b80c3bf78523bfe80974d320935bfa30add02e1bff88ec2166c6bd5a706c42&skVersion=7&iframeId=auth-pn5p11i5-dp7p-bqol-nyts-ejaew7p6&authVersion=latest:0
+[    2366ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://appleid.cdn-apple.com/appleauth/static/bin/cb3432457731/dist/assets/shared-icons.woff:0
+[  111572ms] [WARNING] tb-alertbox--warn ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[  111572ms] [WARNING] tb-alertbox--alert ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[  111920ms] [WARNING] tb-alertbox--warn ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[  111920ms] [WARNING] tb-alertbox--alert ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[  126035ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[  126038ms] [WARNING] [maison] No route found https://appstoreconnect.apple.com/apps @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[  126250ms] [WARNING] Metrics config: No config provided via delegate or fetched via init(), using default/cached config values. @ https://appstoreconnect.apple.com/access/static/js/694.81535de161180022.js:0
+[  126259ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://appstoreconnect.apple.com/apps:0
+[  127209ms] [WARNING] An array is needed to render meta tags @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[  219845ms] [WARNING] Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <button.Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 glQtJE hOXinG htlnXz ijkWSZ>
+Ancestor with aria-hidden: <dialog.Box-sc-18eybku-0 sc-fqkvVR gShzdv crilYZ#modal-dialog-0.27197909035463863-2> @ https://appstoreconnect.apple.com/apps:0

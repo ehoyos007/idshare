@@ -1,0 +1,4 @@
+[    1176ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://appleid.apple.com/account/manage/gs/ws/token:0
+[    2202ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://buy.apps.apple.com/account/web/info:0
+[    2212ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://buy.apps.apple.com/account/web/infoRefresh:0
+[    2639ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://auth.apps.apple.com/auth/v1/gs:0

@@ -1,0 +1,38 @@
+[    1892ms] [ERROR] Access to font at 'https://appleid.cdn-apple.com/appleauth/static/bin/cb3432457731/dist/assets/shared-icons.woff' from origin 'https://idmsa.apple.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://idmsa.apple.com/appleauth/auth/signin?widgetKey=e0b80c3bf78523bfe80974d320935bfa30add02e1bff88ec2166c6bd5a706c42&skVersion=7&iframeId=auth-3yccxpd8-zng0-veti-brtt-trcba9z9&authVersion=latest:0
+[    1892ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://appleid.cdn-apple.com/appleauth/static/bin/cb3432457731/dist/assets/shared-icons.woff:0
+[   19490ms] [WARNING] tb-alertbox--warn ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[   19491ms] [WARNING] tb-alertbox--alert ng-isolate-scope is not valid @ https://appstoreconnect.apple.com/static/vendors.1768505445909.js:0
+[   20602ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   20603ms] [WARNING] [maison] No route found https://appstoreconnect.apple.com/apps/6760511889/testflight/ios @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   20692ms] [WARNING] Metrics config: No config provided via delegate or fetched via init(), using default/cached config values. @ https://appstoreconnect.apple.com/access/static/js/694.81535de161180022.js:0
+[   20742ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://appstoreconnect.apple.com/apps/6760511889/testflight/ios:0
+[   22598ms] [WARNING] An array is needed to render meta tags @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23111ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23113ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23126ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23217ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23243ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23244ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23323ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23345ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23503ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23643ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23685ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23685ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23724ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23824ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   23891ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43689ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43703ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43704ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43771ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43794ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43818ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   43852ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   51038ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   51315ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   51594ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   51635ms] [WARNING] eventQueue overflow, deleting LRU events: size is: 101 which is over max size: 100 @ https://appstoreconnect.apple.com/access/static/js/container.f00f8c8dd8c97bc3.js:1
+[   60374ms] [WARNING] Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <button.Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 eAoRuS ioasrT lasQwK ijkWSZ>
+Ancestor with aria-hidden: <dialog.Box-sc-18eybku-0 sc-hmdomO gShzdv eERlgb#modal-dialog-0.5159148693406775-231> @ https://appstoreconnect.apple.com/teams/f843fd3a-a966-490d-b920-d372297fd960/apps/6760511889/testflight/groups/d7639038-92ae-4eec-beda-6d8012b8cca1:0

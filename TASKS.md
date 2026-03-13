@@ -70,12 +70,26 @@
 - [ ] Invalid URL pasted → error shown, send disabled
 - [ ] API timeout → error shown, retry option works
 
-## 🔲 Phase 7 (Future) — Share Sheet Extension
+## ✅ Phase 7 — TestFlight Distribution ✅ COMPLETE
+- [x] Generated placeholder app icons (main app 1024x1024 + all iMessage extension sizes)
+- [x] Changed extension product type from `app-extension` to `app-extension.messages`
+- [x] Created Messages Icon via Xcode GUI (stickersiconset with 13 non-square 4:3 icons)
+- [x] Matched `ASSETCATALOG_COMPILER_APPICON_NAME` to actual icon set name ("Messages Icon")
+- [x] Matched `MSMessagesExtensionStoreIconName` in Info.plist to "Messages Icon"
+- [x] Changed `PRODUCT_NAME` to "IDShare - Music Links" (original name taken on App Store)
+- [x] Archived via Xcode GUI (Product → Archive)
+- [x] Uploaded Build 1 via TestFlight Internal Only
+- [x] Uploaded Build 2 via App Store Connect (for external testing eligibility)
+- [x] Created Internal Testing group ("Friends") + External Testing group ("Public Beta")
+- [x] Submitted for Beta App Review
+- [x] Created TESTFLIGHT_GUIDE.md documenting entire process
+
+## 🔲 Phase 8 (Future) — Share Sheet Extension
 - [ ] Add Share Sheet target to Xcode project
 - [ ] Reuse OdesliService + MessageComposer
 - [ ] Test sharing directly from Spotify/Apple Music apps
 
-## 🔲 Phase 8 (Future) — Audio Preview
+## 🔲 Phase 9 (Future) — Audio Preview
 - [ ] Add AVPlayer to extension UI
 - [ ] Wire up 30-second preview URL from Odesli response
 - [ ] Test memory usage — stay under ~120MB

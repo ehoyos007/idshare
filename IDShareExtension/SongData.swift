@@ -13,9 +13,18 @@ struct SongData {
     let previewURL: URL?          // 30-second preview (optional, may not always be present)
     let platformLinks: PlatformLinks
 
+    /// The platform-specific ID extracted from the Odesli entityUniqueId.
+    /// e.g. "SPOTIFY_SONG::0VjIjW4GlUZAMYd2vXMi3b" → "0VjIjW4GlUZAMYd2vXMi3b"
+    var platformID: String {
+        if let range = trackID.range(of: "::") {
+            return String(trackID[range.upperBound...])
+        }
+        return trackID
+    }
+
     /// The IDShare landing page URL for this track
     var landingPageURL: URL {
-        URL(string: "https://idshare.vercel.app/s/\(trackID)")!
+        URL(string: "https://idshare.vercel.app/s/\(platformID)")!
     }
 }
 
