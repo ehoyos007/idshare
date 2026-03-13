@@ -435,6 +435,60 @@ override func paste(itemProviders: [NSItemProvider]) {
 
 ---
 
+## 9. TestFlight Distribution Types
+
+### Internal Only vs App Store Connect
+
+| Distribution Method | Internal Testing | External Testing | Public Link |
+|---------------------|-----------------|-----------------|-------------|
+| **TestFlight Internal Only** | Yes | **No** | **No** |
+| **App Store Connect** | Yes | Yes (after Beta Review) | Yes |
+
+**If you want a public shareable link, you MUST use App Store Connect distribution** — not TestFlight Internal Only. Internal Only builds are restricted to your team members added by email.
+
+### How to upload for External Testing
+
+1. In Xcode Organizer, select your archive
+2. Click **Distribute App**
+3. Select **App Store Connect** (first option — NOT TestFlight Internal Only)
+4. Click **Distribute**
+5. Xcode uploads the build to App Store Connect
+
+### Setting up External Testing + Public Link
+
+1. Go to [App Store Connect](https://appstoreconnect.apple.com) → your app → **TestFlight** tab
+2. Under **External Testing** in the left sidebar, click **+** to create a group (e.g. "Public Beta")
+3. Click **Add Builds** → select your build (must be uploaded via App Store Connect, not Internal Only)
+4. Apple shows a **Test Information** dialog — fill in:
+   - **Beta App Description**: Brief description of what to test
+   - **Feedback Email**: Your email
+   - **Contact Information**: Your name, phone, email
+   - **Sign-in required**: **Uncheck** this if your app has no login
+5. Click **Next** → **Submit for Beta App Review**
+6. Wait **24-48 hours** for Apple to approve
+
+### Enabling the Public Link
+
+Once Beta App Review approves your build:
+
+1. Go to your External Testing group (e.g. "Public Beta")
+2. Look for **Enable Public Link** toggle
+3. Enable it — you get a URL like `https://testflight.apple.com/join/XXXXXXXX`
+4. Share this single link anywhere — text, social media, QR code, website
+5. Anyone who taps it can install your app via TestFlight (up to 10,000 testers)
+
+### App Encryption Documentation
+
+When you first view a build in TestFlight, Apple asks about encryption:
+
+- If your app **only uses HTTPS** (standard networking via URLSession): Select **"Standard encryption algorithms instead of, or in addition to, using or accessing the encryption within Apple's operating system"**
+- If your app uses **no networking at all**: Select **"None of the algorithms mentioned above"**
+- Click **Save**
+
+This is a one-time compliance step per build.
+
+---
+
 ## Quick Reference: Full Workflow
 
 ```bash
@@ -456,8 +510,13 @@ xcrun devicectl device install app --device DEVICE_ID path/to/MyApp.app
 # 5. Archive (use Xcode GUI for iMessage extensions)
 #    Product → Archive
 
-# 6. Upload
-#    Xcode Organizer → Distribute App → TestFlight Internal Only → Distribute
+# 6. Upload for EXTERNAL testing (public link eligible)
+#    Xcode Organizer → Distribute App → App Store Connect → Distribute
+
+# 7. Set up public link
+#    App Store Connect → TestFlight → External Testing → New Group
+#    → Add Builds → Fill Test Info → Submit for Beta App Review
+#    → Once approved: Enable Public Link → share the URL
 ```
 
 ---
